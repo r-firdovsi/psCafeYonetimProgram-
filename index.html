@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PlayStation Cafe Yonetim Programi</title>
+	<link rel="stylesheet" type="text/css" href="assets\bootstrap\css\bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=K2D|Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/fontawsome/all.css">
+  <link rel="icon" href="assets/img/icon.png">
+
+  <!-- ⓒ 2018 Powered by Javascript. Created by Firdovsi Rustemov -->
+
+</head>
+<body>
+<div id="mainDiv">
+	<section id="head">
+	  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+      <a class="navbar-brand" href="#">
+  	  <i class="fas fa-home"></i>
+      </a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+      <p>Game Club</p>
+      </ul>
+    <span class="navbar-text">
+      <a href="#hesabtarixcesi">
+      <button class="btn btn-outline-primary notification" onclick="hesabTarixcesi()"><span id="badge"><i class="fas fa-star-of-life notfi"></i></span>Hesab Tarixcesi</button>
+      </a>
+    </span>
+    </div>
+    </nav>
+	</section>
+	
+
+
+	<section id="content">
+		<div class="container">
+		<div class="card-deck">
+
+    <div class="card text-center bg-warning">
+      <i id="ico1" class="fab fa-playstation"></i>
+    <div class="card-body" onclick="popUp(1)">
+      <h5 class="card-title" id="masano1">Masa No 1</h5>
+      <h2 class="card-title" id="hesabnovu1"></h2>
+      <p class="card-text" id="p1">Oyun Muddetini Teyin Elemek Ucun Klikleyin</p><p id="p1hid">&nbsp;Deqiqe</p>
+    </div>
+    <div class="card-footer">
+      <small  id="masa1Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="valyuta1">&nbsp;AZN</small></br></br>
+      <button class="btn btn-outline-primary" id="bg1" onclick="bagla(1)" disabled="">Hesabi Bagla</button>
+    </div>
+    </div>
+
+    <div class="card text-center bg-dark">
+      <i id="ico2" class="fab fa-playstation"></i>
+    <div class="card-body" onclick="popUp(2)">
+      <h5 class="card-title" id="masano2">Masa No 2</h5>
+      <h2 class="card-title" id="hesabnovu2"></h2>
+      <p class="card-text" id="p2">Oyun Muddetini Teyin Elemek Ucun Klikleyin</p><p id="p2hid">&nbsp;Deqiqe</p>
+    </div>
+    <div class="card-footer">
+     <small  id="masa2Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="valyuta2">&nbsp;AZN</small></br></br>
+     <button class="btn btn-outline-primary" id="bg2" onclick="bagla(2)" disabled="">Hesabi Bagla</button>
+    </div>
+    </div>
+
+    <div class="card text-center bg-danger">
+      <i id="ico3" class="fab fa-playstation"></i>
+    <div class="card-body" onclick="popUp(3)">
+      <h5 class="card-title" id="masano3">Masa No 3</h5>
+      <h2 class="card-title" id="hesabnovu3"></h2>
+      <p class="card-text" id="p3">Oyun Muddetini Teyin Elemek Ucun Klikleyin</p><p id="p3hid">&nbsp;Deqiqe</p>
+    </div>
+    <div class="card-footer">
+      <small  id="masa3Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="valyuta3">&nbsp;AZN</small></br></br>
+      <button class="btn btn-outline-primary" id="bg3" onclick="bagla(3)" disabled="">Hesabi Bagla</button>
+    </div>
+    </div>
+
+    <div class="card text-center bg-primary">
+      <i id="ico4" class="fab fa-playstation"></i>
+    <div class="card-body" onclick="popUp(4)">
+      <h5 class="card-title" id="masano4">Masa No 4</h5>
+      <h2 class="card-title" id="hesabnovu4"></h2>
+      <p class="card-text" id="p4">Oyun Muddetini Teyin Elemek Ucun Klikleyin</p><p id="p4hid">&nbsp;Deqiqe</p>
+    </div>
+    <div class="card-footer">
+      <small  id="masa4Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="valyuta4">&nbsp;AZN</small></br></br>
+      <button class="btn btn-outline-primary" id="bg4" onclick="bagla(4)" disabled="">Hesabi Bagla</button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<!-- Kafeteriya -->
+
+    <div class="container">
+    <div class="card-deck">
+
+    <div class="card text-center bg-warning">
+      <i class="fas fa-coffee"></i>
+    <div class="card-body" onclick="popUpp(1)">
+      <h5 class="card-title">Kafeteriya</h5>
+      <h2 class="card-title"></h2>
+      <p class="card-text" id="sip1">Verilen Sifarisler</p>
+    </div>
+    <div class="card-footer" style="height: 50px;">
+      <small  id="kafe1Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="hesab1">&nbsp;AZN</small></br></br>
+    </div>
+    </div>
+
+    <div class="card text-center bg-dark">
+      <i class="fas fa-coffee"></i>
+    <div class="card-body" onclick="popUpp(2)">
+      <h5 class="card-title">Kafeteriya</h5>
+      <h2 class="card-title"></h2>
+      <p class="card-text" id="sip2">Verilen Sifarisler</p>
+    </div>
+    <div class="card-footer" style="height: 50px;">
+      <small  id="kafe2Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="hesab2">&nbsp;AZN</small></br></br>
+    </div>
+    </div>
+
+    <div class="card text-center bg-danger">
+      <i class="fas fa-coffee"></i>
+    <div class="card-body" onclick="popUpp(3)">
+      <h5 class="card-title">Kafeteriya</h5>
+      <h2 class="card-title"></h2>
+      <p class="card-text" id="sip3">Verilen Sifarisler</p>
+    </div>
+    <div class="card-footer" style="height: 50px;">
+      <small  id="kafe3Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="hesab3">&nbsp;AZN</small></br></br>
+    </div>
+    </div>
+
+    <div class="card text-center bg-primary">
+      <i class="fas fa-coffee"></i>
+    <div class="card-body" onclick="popUpp(4)">
+      <h5 class="card-title">Kafeteriya</h5>
+      <h2 class="card-title"></h2>
+      <p class="card-text" id="sip4">Verilen Sifarisler</p>
+    </div>
+    <div class="card-footer" style="height: 50px;">
+      <small  id="kafe4Hesab">Verilecek Mebleq</small><small style="text-align: left;" id="hesab4">&nbsp;AZN</small></br></br>
+    </div>
+    </div>
+  
+
+	</section>
+
+  <section id="hesabtarixcesi">
+
+    <h1>Hesab Tarixcesi</h1>
+    <div class="table-scroll">
+    <table class="table text-center" id="myTable" >
+
+      <thead class="thead-light">
+      <tr>
+      <th scope="col">Masa</th>
+      <th scope="col">Tarif</th>
+      <th scope="col">Kafeteriya</th>
+      <th scope="col">Tarix</th>
+      <th scope="col">Hesab</th>
+      </tr>
+      </thead>
+  
+    </table>
+    </div>
+<div class="container">
+<div class="row">
+  <div class="col-md-10 text-left">
+    <h5>Total:</h5>
+  </div>
+  <div class="col-md-2 text-right">
+    <p id="total">0</p><small>AZN</small>
+  </div>
+</div>
+</div>
+  </section>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+    <div class="modal-content">
+    <div class="modal-header">
+    	<h6><i class="fas fa-cog"></i> Idare Etme Paneli</h6>
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body text-center">
+
+  <!-- Vaxt -->
+
+  <section id="times">
+        <h3><i class="fab fa-algolia"></i>  Vaxtin Teyin Edilmesi</h3>
+        <input type="" class="" id="inputTimeArea" name="" value="" placeholder="Muddeti Daxil Edin" onmouseout="areaTrueFalse()"></br>
+     <div class="row">
+     <div class="col-md-12">
+       <input type="button" class="btn btn-outline-primary" id="button1" onclick="setInputValue(1)" name="" value="30">
+       <input type="button" class="btn btn-outline-primary" id="button2" onclick="setInputValue(2)" name="" value="60">
+       <input type="button" class="btn btn-outline-primary" id="button3" onclick="setInputValue(3)" name="" value="90">
+	 </div>
+	 </div>
+
+	 <div class="row">
+	 <div class="col-md-12">
+       <input type="button" class="btn btn-outline-primary" id="button4" onclick="setInputValue(4)" name="" value="120">
+       <input type="button" class="btn btn-outline-primary" id="button5" onclick="setInputValue(5)" name="" value="150">
+       <input type="button" class="btn btn-outline-primary" id="button6" onclick="setInputValue(6)" name="" value="180">
+	 </div>
+	 </div>
+        <input type="button" id="limitsiz" class="btn btn-outline-danger" name="" value="Limitsiz" onclick="limitsiz()">
+        <input type="button" class="btn btn-outline-primary  closes" name="" onclick="teyinEt()" value="Teyin Et" disabled="" id="teyin">
+  </section>
+
+  <!-- Kafeteriya -->
+
+  <section id="kafeteriya">
+        <h3><i class="fas fa-coffee"></i> Kafeteriya</h3>
+        <input type="" name="" id="dxolunanmiq" placeholder="Miqdari Daxil Edin"></br>
+        <input type="button" class="btn btn-outline-danger trueFalse" id="mbtn1" onclick="kafeElave(1)" name="" value="Cay" disabled="">
+        <input type="button" class="btn btn-outline-danger trueFalse" id="mbtn2" onclick="kafeElave(2)" name="" value="Kofe" disabled="">
+        <input type="button" class="btn btn-outline-danger trueFalse" id="mbtn3" onclick="kafeElave(3)" name="" value="Snickers" disabled="">
+        <input type="button" class="btn btn-outline-danger trueFalse" id="mbtn4" onclick="kafeElave(4)" name="" value="Pletka" disabled="">
+        <input type="button" class="btn btn-outline-danger trueFalse" id="mbtn5" onclick="kafeElave(5)" name="" value="Cipsi" disabled="">
+        <input type="button" class="btn btn-outline-danger trueFalse" id="mbtn6" onclick="kafeElave(6)" name="" value="Cola" disabled="">
+  </section>
+
+
+
+    </div>
+    <div class="modal-footer text-center">
+      <h5>ⓒ 2018  Powered by Javascript. Created by Firdovsi Rustemov</h5>
+    </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="assets/bootstrap/js/modal.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/masaSecimi.js"></script>
+<script type="text/javascript" src="assets/js/vaxtinHesablanmasi.js"></script>
+<script type="text/javascript" src="assets/js/qiymetinHesablanmasi.js"></script>
+<script type="text/javascript" src="assets/js/kafeteriya.js"></script>
+</body>
+</html>

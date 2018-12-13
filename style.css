@@ -1,0 +1,283 @@
+@import 'https://use.fontawesome.com/releases/v5.3.1/css/all.css';
+@import 'assets/fontawsome/all.css';
+@import url('https://fonts.googleapis.com/css?family=K2D|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+/*ⓒ 2018 Powered by Javascript. Created by Firdovsi Rustemov*/
+
+#mainDiv #content {
+	margin-top: 100px;
+}
+
+#mainDiv #head i {
+	color: #3399ff;
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+#mainDiv #head a {
+	border-right: 1px solid #3399ff;
+}
+
+#mainDiv #head p {
+	color: #3399ff;
+	font-weight: bold;
+	padding-top: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+#mainDiv #head .btn {
+	margin-left: 950px;
+}
+
+.notification {
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+
+
+#badge {
+  position: absolute;
+  top: -13px;
+  right: -29px;
+  padding: 3px 10px;
+  display: none;
+}
+
+#mainDiv #head .notfi {
+  color: red;
+  font-size: 17px;
+}
+
+
+
+#mainDiv #content i {
+	font-size: 55px;
+	padding-top: 15px;
+}
+
+#mainDiv #content .card {
+	cursor: pointer;
+}
+
+
+
+#content .card-deck p {
+	font-weight: bold;
+	font-family: 'K2D', sans-serif;
+	display: inline-block;
+}
+
+#content .card-deck {
+  margin-bottom: 10px;
+}
+
+#content .card-footer small {
+ font-weight: bold;
+ font-size: 14px;
+ color: black;
+font-family: 'Anton', sans-serif;
+letter-spacing: 2px;
+}
+
+#content .card-footer button {
+    border-color: black;
+    color: black;
+}
+
+#content .card-footer button:hover {
+    background-color: black;
+    color: white;
+}
+
+#content .card-deck #p1hid{display: none;}
+#content .card-deck #p2hid{display: none;}
+#content .card-deck #p3hid{display: none;}
+#content .card-deck #p4hid{display: none;}
+
+#valyuta1{display: none;}
+#valyuta2{display: none;}
+#valyuta3{display: none;}
+#valyuta4{display: none;}
+
+#hesab1 {display: none;}
+#hesab2 {display: none;}
+#hesab3 {display: none;}
+#hesab4 {display: none;}
+
+.v1 {
+  display: none;
+}
+
+#content .card-deck .card-title {
+	font-family: 'Playfair Display', serif;
+}
+
+#content .card-deck:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+#mainDiv #hesabtarixcesi {
+    display: none;
+}
+
+#mainDiv #hesabtarixcesi h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    color:  #3399ff;
+    font-family: 'Playfair Display', serif;
+}
+
+
+#mainDiv #hesabtarixcesi .table-scroll {
+height: 500px;
+overflow: scroll;  
+font-family: 'K2D', sans-serif;
+}
+
+#mainDiv #hesabtarixcesi .container {
+  margin-top: 10px;
+  font-family: 'K2D', sans-serif;
+}
+
+#mainDiv #hesabtarixcesi small,p {
+  display: inline-block;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.modal-content h3 {
+  color:  #3399ff;
+  font-family: 'Playfair Display', serif;
+  padding-top: 5px;
+}
+
+.modal-content h6, h5 {
+  font-family: 'K2D', sans-serif;
+}
+
+.modal-body #times{
+  display: none;
+}
+
+.modal-body #kafeteriya{
+  display: none;
+}
+
+
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #343a40;
+    color: white;
+}
+
+.modal-header h6 {
+	color: #3399ff;
+	font-weight: bold;
+	padding-top: 7px;
+}
+
+.modal-body {
+	padding: 2px 16px;
+	padding-bottom: 15px;
+}
+
+.modal-body input {
+	border-radius: 10px;
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+  outline: none;
+}
+
+.modal-body input:focus {border-color: #3399ff;}
+
+
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #343a40;
+    color: white;
+}
+
+.modal-footer h5 {
+	text-align: center;
+	font-size: 15px;
+	padding-top: 18px;
+	color: #3399ff;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
